@@ -1,9 +1,9 @@
 .PHONY:all
 all:tcpClient tcpServer
 
-tcpClient:tcpClient.cc
+tcpClient:tcpClient.cpp
 	g++ -o $@ $^ 
-tcpServer:tcpServer.cc
+tcpServer:tcpServer.cpp
 	g++ -o $@ $^ 
 
 .PHONY:clean
